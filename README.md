@@ -1,2 +1,2 @@
 # harrysite
-harry's personal sote
+harry's personal site
