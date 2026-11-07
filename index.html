@@ -52,9 +52,11 @@
   .foot{padding:76px 32px 40px;max-width:var(--maxw);margin:0 auto}
   .foot h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,6vw,4.4rem);line-height:1;letter-spacing:-1px;margin-bottom:18px}
   .foot h2 em{color:var(--accent);font-style:italic}
-  .foot p{color:var(--muted);max-width:380px;margin:0 auto 28px}
+  .foot p{color:var(--muted);max-width:380px;margin:0 auto 34px}
   .btn{display:inline-block;background:var(--accent);color:#fff;padding:14px 30px;border-radius:999px;font-weight:600;font-size:.9rem;transition:.2s}
   .btn:hover{background:#d95626;transform:translateY(-2px)}
+  .formcard{max-width:680px;margin:0 auto;background:transparent;padding:0;text-align:left}
+  .formcard iframe{display:block;width:100%;min-height:420px;border:0}
   .links{display:flex;gap:56px;justify-content:center;flex-wrap:wrap;margin-top:54px;padding-top:36px;border-top:1px solid var(--line)}
   .links h4{font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:12px;font-weight:600}
   .links .row{display:flex;gap:22px;justify-content:center;flex-wrap:wrap}
@@ -205,7 +207,10 @@
   <div class="foot">
     <h2>Feel free to <em>reach out.</em></h2>
     <p>Have a project brewing or seeking a friendly conversation? Your communication is appreciated.</p>
-    <a class="btn" href="mailto:harry.reafor@gmail.com">Send message →</a>
+    <div class="formcard" id="contact">
+      <iframe data-tally-src="https://tally.so/embed/w4K6xb?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1" loading="lazy" width="100%" height="460" frameborder="0" marginheight="0" marginwidth="0" title="Contact form"></iframe>
+    </div>
+    <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e){e.src=e.dataset.tallySrc})};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w;s.onload=v;s.onerror=v;d.body.appendChild(s)}</script>
     <div class="links">
       <div><h4>Follow</h4><div class="row">
         <a href="https://instagram.com/harryreafor" target="_blank" rel="noopener">Instagram ↗</a>
